@@ -1,0 +1,68 @@
+{
+  "name": "Example workshop search",
+  "mode": "commercial_lease",
+  "objective": "Find a workshop with loading access and a usable total occupancy budget.",
+  "client": {
+    "name": "",
+    "email": "",
+    "organization": "",
+    "brief_text": "Light fabrication and storage. Confirm permitted use and available electrical power."
+  },
+  "preferences": {
+    "locations": [
+      "Example City, OH"
+    ],
+    "property_types": [
+      "industrial"
+    ],
+    "currency": "USD",
+    "budget_monthly_max": 4500,
+    "cash_available": 30000,
+    "min_area_sqft": 1500,
+    "max_area_sqft": 4000,
+    "intended_use": "Light fabrication and storage",
+    "must_have": "Loading access",
+    "max_listing_age_days": 60
+  },
+  "cost_assumptions": {
+    "financing": "mortgage",
+    "down_payment_percent": 20,
+    "interest_rate_percent": null,
+    "loan_years": 30,
+    "fit_out_upfront": null,
+    "moving_upfront": null
+  },
+  "settings": {
+    "provider": "codex",
+    "model": "",
+    "target_results": 25,
+    "min_fit": 55,
+    "discovery_queries": 6,
+    "max_agent_calls": 70,
+    "max_minutes": 60,
+    "concurrency": 2,
+    "agent_timeout_seconds": 180,
+    "research_pages": 4,
+    "max_turns": 8,
+    "max_cost_usd": 10,
+    "seed_urls": [],
+    "routes": {
+      "profile": {
+        "provider": "inherit",
+        "model": ""
+      },
+      "discovery": {
+        "provider": "inherit",
+        "model": ""
+      },
+      "research": {
+        "provider": "claude",
+        "model": ""
+      },
+      "outreach": {
+        "provider": "inherit",
+        "model": ""
+      }
+    }
+  }
+}

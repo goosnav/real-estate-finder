@@ -1,0 +1,2 @@
+mode,title,address,unit,location,property_type,listing_url,price_amount,currency,price_basis,area_sqft,lease_type,email,email_source,costs
+commercial_lease,Fictional Bay Workshop,300 Example Industrial Way,Bay 3,"Example City, OH",industrial,https://spaces.example/listings/bay-3,18,USD,sqft_year,2400,nnn,broker@spaces.example,https://spaces.example/contact,"{""operating_expenses"": 4.5, ""operating_expenses_basis"": ""sqft_year"", ""deposit"": 7200, ""lease_months"": 36, ""source_url"": ""https://spaces.example/listings/bay-3""}"

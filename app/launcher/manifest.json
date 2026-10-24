@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "app_id": "com.goosnav.real-estate-finder",
+  "display_name": "Real Estate Finder",
+  "python": "3.12.12",
+  "entry_module": "real_estate_finder.start",
+  "ready_path": "/health/ready",
+  "startup_timeout_seconds": 180,
+  "preferred_port": 0,
+  "data_directory_name": "RealEstateFinder"
+}

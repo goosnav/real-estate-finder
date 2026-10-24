@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Research spaces, compare costs, and prepare your next move.">
+  <title>Real Estate Finder · Goosnav Labs</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Saved searches">
+      <a class="brand" href="#" data-action="home"><span>GOOSNAV LABS</span><strong>REAL ESTATE<br> FINDER.</strong></a>
+      <button class="button primary" type="button" data-action="new">New search <span aria-hidden="true">+</span></button>
+      <div class="rail-heading">YOUR SEARCHES <span id="search-count"></span></div>
+      <nav id="search-list" aria-label="Search workspaces"><span class="muted small">Opening workspace…</span></nav>
+      <div class="rail-bottom">
+        <button type="button" class="rail-action" data-action="suppressions">Do not contact <span aria-hidden="true">↗</span></button>
+        <button type="button" class="rail-action" data-action="help">Setup & CLI <span aria-hidden="true">↗</span></button>
+        <div class="local-line"><span>LOCAL WORKSPACE</span><button type="button" class="icon-button" data-action="quit" aria-label="Quit Real Estate Finder" title="Quit"><svg width="19" height="19" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2v7M5.5 4.5a7 7 0 1 0 9 0" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="context-line"><span class="eyebrow">FIND YOUR NEXT SPACE</span><span aria-hidden="true">/</span><span id="active-name">Workspace</span><span id="demo-badge" class="badge attention" hidden>Fictional demo</span></div><div class="topbar-actions"><span id="request-status" class="small muted" role="status"></span><button type="button" class="button quiet small" data-action="help">Setup & CLI ↗</button></div></header>
+      <div id="run-region"></div><div id="run-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+      <main id="main" tabindex="-1"><div class="loading-view" role="status">Opening workspace…</div></main>
+      <footer><span>RESEARCH / COMPARE / INQUIRE</span><span>Make room for what comes next.</span></footer>
+    </div>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-dialog-title"></dialog>
+  <dialog id="property-dialog" class="property-dialog" aria-labelledby="property-dialog-title"></dialog>
+  <dialog id="utility-dialog" aria-labelledby="utility-dialog-title"></dialog>
+  <input id="documents-input" type="file" accept=".txt,.md,.pdf,.docx,.csv" multiple hidden>
+  <input id="suppression-input" type="file" accept=".csv" hidden>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+  <noscript><p class="error-line">Enable JavaScript to use the local workspace.</p></noscript>
+</body>
+</html>

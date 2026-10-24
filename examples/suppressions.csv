@@ -1,0 +1,3 @@
+kind,value,reason
+email,no-contact@spaces.example,Do not email this address
+domain,excluded.example,Exclude this property source
